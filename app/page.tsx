@@ -38,12 +38,12 @@ const technologies: string[] = [
   "Jest",
   "Git",
   "Webpack",
+  "Vite",
 ];
 
 const tools: string[] = [
   "Convex",
   "Clerk",
-  "Vite",
   "Figma",
   "AWS Amplify",
   "Vercel",
