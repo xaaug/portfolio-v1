@@ -24,15 +24,20 @@ const projects: Project[] = [
 ];
 
 const technologies: string[] = [
+  "Next.js",
   "React",
   "TypeScript",
   "JavaScript",
+  "HTML",
   "CSS",
   "Tailwind CSS",
-  "Next.js",
+  "Bootstrap",
   "SQL",
   "Node.js",
   "Express",
+  "Jest",
+  "Git",
+  "Webpack",
 ];
 
 const tools: string[] = [
