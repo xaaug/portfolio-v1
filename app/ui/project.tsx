@@ -40,9 +40,13 @@ export default function Project({
           whileTap={{ scale: 1 }}
           transition={{ duration: 0.5 }}
         >
-          <motion.a href={''} className="text-base border-b border-transparent"  initial={{ borderColor: "transparent" }}
-      whileHover={{ borderColor: "#fff" }} // Change to your preferred color
-      transition={{ duration: .5 }}>
+          <motion.a
+            href={""}
+            className="text-base border-b border-transparent"
+            initial={{ borderColor: "transparent" }}
+            whileHover={{ borderColor: "#fff" }} // Change to your preferred color
+            transition={{ duration: 0.5 }}
+          >
             {title}
           </motion.a>
 

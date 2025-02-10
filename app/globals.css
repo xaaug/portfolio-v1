@@ -24,23 +24,21 @@ body {
   animation: gradientAnimation 10s ease infinite;
 }
 
-
 .title {
   font-size: 1.25rem;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
 .list-items {
   display: flex;
   align-items: center;
-  gap: .6rem;
+  gap: 0.6rem;
   flex-wrap: wrap;
 }
 
-
-.list-items li:nth-child(n+2)::before{
-  content: '·';
-  margin-right: .6rem;
+.list-items li::before {
+  content: "·";
+  margin-right: 0.6rem;
 }
 
 .shiny-text {
@@ -73,10 +71,10 @@ body {
 
 .card-spotlight {
   position: relative;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   /* border: 1px solid #222; */
   /* background-color: #0f0f0f; */
-  padding: .8rem 1.6rem;
+  padding: 0.8rem 1.6rem;
   overflow: hidden;
   --mouse-x: 50%;
   --mouse-y: 50%;
@@ -90,7 +88,11 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background: radial-gradient(circle at var(--mouse-x) var(--mouse-y), var(--spotlight-color), transparent 80%);
+  background: radial-gradient(
+    circle at var(--mouse-x) var(--mouse-y),
+    var(--spotlight-color),
+    transparent 80%
+  );
   opacity: 0;
   transition: opacity 0.5s ease;
   pointer-events: none;

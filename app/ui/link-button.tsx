@@ -1,9 +1,8 @@
-'use client'
+"use client";
 
 import { ArrowUpRightIcon } from "@heroicons/react/24/solid";
 
 import { motion } from "framer-motion";
-
 
 export default function LinkButton({
   href,
@@ -17,7 +16,7 @@ export default function LinkButton({
       className="flex gap-1 items-center "
       whileHover={{ scale: 1.03 }}
       whileTap={{ scale: 1 }}
-      transition={{ duration: .8 }}
+      transition={{ duration: 0.8 }}
     >
       <a
         href={href}
