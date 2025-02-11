@@ -9,7 +9,7 @@ type Project = {
 
 const projects: Project[] = [
   {
-    title: "A Platform for Viewing, Downloading, and Creating Memes",
+    title: "Meme Creation and Download Platform",
     desc: " A platform that allows users to browse, view, download, and even  create their own memes. Users can choose from a wide variety of templates or upload their own images, add custom text, and generate their own memes to share with the community",
   },
 
@@ -39,6 +39,8 @@ const technologies: string[] = [
   "Git",
   "Webpack",
   "Vite",
+  "Framer Motion",
+  "Styled Components",
 ];
 
 const tools: string[] = [
@@ -48,6 +50,8 @@ const tools: string[] = [
   "AWS Amplify",
   "Vercel",
   "Netlify",
+  "Github",
+  "Github Copilot",
 ];
 
 export default function Home() {
@@ -79,6 +83,10 @@ export default function Home() {
               <LinkButton
                 href="https://www.linkedin.com/in/xanderwayne/"
                 title="Linkedin"
+              />
+              <LinkButton
+                href="mailto:xandernzaywa@gmail.com"
+                title="Contact"
               />
             </div>
           </div>
