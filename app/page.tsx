@@ -5,21 +5,25 @@ import Header from "@/app/ui/header";
 type Project = {
   title: string;
   desc: string;
+  link: string
 };
 
 const projects: Project[] = [
   {
     title: "Meme Creation and Download Platform",
     desc: " A platform that allows users to browse, view, download, and even  create their own memes. Users can choose from a wide variety of templates or upload their own images, add custom text, and generate their own memes to share with the community",
+    link: "",
   },
 
   {
     title: "Synchronized Video Streaming Platform ",
     desc: "  A web application that allows multiple users to watch the same video simultaneously in real time. Users can share a video link, sync playback, and chat with each other while watching. The goal  was to create a shared viewing experience, whether for watching videos or movies with friends remotely",
+    link: "https://github.com/xaaug/watch-party"
   },
   {
     title: "A Web-Based Inventory Management System",
     desc: " A robust platform designed to help businesses track and manage their inventory in real time. It allows users to add, edit, and monitor stock levels, track product sales, and manage suppliers. The system also generates reports on stock movement, sales trends, and reorder levels.",
+    link: "",
   },
 ];
 
@@ -41,6 +45,7 @@ const technologies: string[] = [
   "Vite",
   "Framer Motion",
   "Styled Components",
+  "Web Sockets"
 ];
 
 const tools: string[] = [
@@ -52,6 +57,8 @@ const tools: string[] = [
   "Netlify",
   "Github",
   "Github Copilot",
+  "Render",
+  "Scoket.io"
 ];
 
 export default function Home() {
@@ -159,7 +166,7 @@ export default function Home() {
             <h2 className="title">Projects</h2>
             <div className="flex flex-col gap-4">
               {projects.map((project, i) => (
-                <Project key={i} title={project.title} content={project.desc} />
+                <Project key={i} link={project.link} title={project.title} content={project.desc} />
               ))}
             </div>
           </div>

@@ -7,9 +7,11 @@ import { motion } from "framer-motion";
 export default function Project({
   title,
   content,
+  link
 }: {
   title: string;
   content: string;
+  link: string
 }) {
   const divRef = useRef<HTMLDivElement>(null);
 
@@ -41,7 +43,7 @@ export default function Project({
           transition={{ duration: 0.5 }}
         >
           <motion.a
-            href={""}
+            href={link}
             className="text-base border-b border-transparent"
             initial={{ borderColor: "transparent" }}
             whileHover={{ borderColor: "#fff" }} // Change to your preferred color
